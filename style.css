@@ -1,0 +1,253 @@
+html {
+    font-size: 10px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Main */
+    --blue: #4d96a9;
+    --purple: #855fb1;
+    --black: #28283d;
+    --gray: #87879d;
+
+    /* Neutral */
+    --light-Blue: #8fe3f9;
+    --light-Purple: #d9b8ff;
+    --near-White: #fafafa;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    background-color: var(--near-White);
+    font-size: 1.8rem;
+    font-weight: 500;
+    max-width: 100%;
+    height: 100%;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 100%;
+    height: 358px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.img-hero-left {
+    /* position: absolute;
+    top: 0;
+    left: -0%; */
+    align-self: flex-start;
+}
+.img-hero-right {
+    /* position: absolute;
+    bottom: 0;
+    right: -10%; */
+    align-self: flex-end;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: 900;
+    color: var(--black);
+    line-height: 1;
+    text-align: center;
+}
+.introduction-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    max-width: 54rem;
+    align-self: center;
+}
+.introduction-description {
+    color: var(--gray);
+}
+.introduction-btn {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+button {
+    font-family: "Red Hat Display";
+    border-radius: 29px;
+    padding: 20px 30px;
+    border: none;
+    font-size: 1.6rem;
+}
+strong {
+    font-weight: 900;
+    color: var(--near-White);
+}
+.download-btn-blue {
+    background-color: var(--blue);
+    color: var(--light-Blue);
+}
+.what-is-it {
+    background-color: var(--purple);
+    color: var(--near-White);
+}
+.download-btn-purple {
+    background-color: var(--purple);
+    color: var(--light-Purple);
+}
+.number {
+    color: var(--gray);
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+.divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.circle {
+    border: 1px solid var(--gray);
+    border-radius: 50%;
+    padding: 20px;
+}
+.line {
+    width: 1px;
+    background-color: var(--gray);
+    height: 84px;
+}
+
+.images {
+    display: flex;
+    width: 111rem;
+    height: 24.2rem;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.img1,
+.img2,
+.img3,
+.img4 {
+    width: 255px;
+    height: 242px;
+    border-radius: 10px;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 540px;
+    height: 240px;
+    text-align: center;
+    padding: 0 5px;
+    margin-bottom: 80px;
+}
+.description-h4 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--blue);
+    align-items: center;
+}
+.description-h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--black);
+}
+.description {
+    font-size: 1.8rem;
+    color: var(--gray);
+}
+
+footer {
+    width: 100%;
+    height: 308px;
+    background: linear-gradient(to bottom, rgba(85, 85, 85, 0.75), var(--blue)),
+        url("starter-code/assets/desktop/image-footer.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+    position: relative;
+}
+.divider-footer {
+    left: 50%;
+    transform: translateY(-110%);
+}
+.divider-first {
+    margin-bottom: 50px;
+}
+.circle-footer {
+    background-color: var(--near-White);
+}
+.footer-information {
+    position: absolute;
+    display: flex;
+    gap: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+    top: 120px;
+}
+
+.download-btn-blue:hover {
+    background-color: var(--light-Blue);
+    color: var(--near-White);
+    cursor: pointer;
+}
+.what-is-it:hover {
+    background-color: var(--light-Purple);
+    cursor: pointer;
+}
+.download-btn-purple:hover {
+    background-color: var(--light-Purple);
+    color: var(--near-White);
+    cursor: pointer;
+}
+
+.footer-h2 {
+    color: var(--near-White);
+    font-size: 4rem;
+    font-weight: 900;
+}
+.footer-description {
+    color: var(--near-White);
+    font-size: 1.8rem;
+    font-weight: 500;
+    width: 350px;
+}
+.download-btn-purple {
+    width: 30rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-family: "Red Hat Display", sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        background-color: var(--near-White);
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 100%;
+        height: 100%;
+    }
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        max-width: 100%;
+        height: 358px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 375px) {
+}
